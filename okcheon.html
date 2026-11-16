@@ -43,6 +43,14 @@
           },
           {
             "@type": "AdministrativeArea",
+            "name": "옥천군 안남면"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "옥천군 군북면"
+          },
+          {
+            "@type": "AdministrativeArea",
             "name": "구일농공단지"
           },
           {
@@ -711,6 +719,33 @@
       margin-top: 6px;
     }
 
+    /* 지역 페이지 상호 링크 */
+    .region-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .region-chip {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--slate-600);
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      padding: 4px 8px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .region-chip.region-chip-current {
+      color: #2563eb;
+      border-color: #bfdbfe;
+      font-weight: 800;
+    }
+
     /* 메인 복귀 링크 */
     .back-main-sec {
       padding: 22px 20px;
@@ -900,7 +935,7 @@
       </div>
 
       <p class="local-note">
-        옥천IC 인근 창고는 상차 후 고속도로 진입 동선이 짧아 대형 차량 작업이 수월합니다. 다만 창고마다 반출 가능 시간이 달라 사전에 확인하고, 파렛트는 파손품과 재사용품을 구분해 배출해 주시면 상차 시간이 줄어듭니다. 지정폐기물은 별도 허가 업체 처리 대상입니다.
+        옥천IC 인근 창고는 상차 후 고속도로 진입 동선이 짧아 대형 차량 작업이 수월합니다. 다만 창고마다 반출 가능 시간이 달라 사전에 확인하고, 파렛트는 파손품과 재사용품을 구분해 배출해 주시면 상차 시간이 줄어듭니다. 옥천군은 옥천읍을 중심으로 동이·안남·안내·청성·청산·이원·군서·군북 9개 읍·면 어디서든 사진 견적으로 물량과 배출 위치를 확인합니다. 지정폐기물은 별도 허가 업체 처리 대상입니다.
       </p>
     </section>
 
@@ -1067,6 +1102,18 @@
     <section class="back-main-sec">
       <a href="index.html" class="back-main-link">대전·세종·충청 전체 권역 메인으로 →</a>
       <p class="back-main-sub">대전 · 세종 · 천안 · 아산 · 청주 · 진천 · 금산 · 공주 · 논산 권역 안내</p>
+      <div class="region-chips">
+        <a href="daejeon.html" class="region-chip">대전 전역</a>
+        <a href="sejong.html" class="region-chip">세종</a>
+        <a href="cheonan.html" class="region-chip">천안</a>
+        <a href="asan.html" class="region-chip">아산</a>
+        <a href="cheongju.html" class="region-chip">청주</a>
+        <a href="jincheon.html" class="region-chip">진천</a>
+        <a href="geumsan.html" class="region-chip">금산</a>
+        <span class="region-chip region-chip-current" aria-current="page">옥천</span>
+        <a href="gongju.html" class="region-chip">공주</a>
+        <a href="nonsan.html" class="region-chip">논산</a>
+      </div>
     </section>
 
     <footer>

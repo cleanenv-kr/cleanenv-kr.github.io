@@ -715,6 +715,33 @@
       margin-top: 6px;
     }
 
+    /* 지역 페이지 상호 링크 */
+    .region-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .region-chip {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--slate-600);
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      padding: 4px 8px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .region-chip.region-chip-current {
+      color: #2563eb;
+      border-color: #bfdbfe;
+      font-weight: 800;
+    }
+
     /* 메인 복귀 링크 */
     .back-main-sec {
       padding: 22px 20px;
@@ -1071,6 +1098,18 @@
     <section class="back-main-sec">
       <a href="index.html" class="back-main-link">대전·세종·충청 전체 권역 메인으로 →</a>
       <p class="back-main-sub">대전 · 세종 · 천안 · 아산 · 진천 · 금산 · 옥천 · 공주 · 논산 권역 안내</p>
+      <div class="region-chips">
+        <a href="daejeon.html" class="region-chip">대전 전역</a>
+        <a href="sejong.html" class="region-chip">세종</a>
+        <a href="cheonan.html" class="region-chip">천안</a>
+        <a href="asan.html" class="region-chip">아산</a>
+        <span class="region-chip region-chip-current" aria-current="page">청주</span>
+        <a href="jincheon.html" class="region-chip">진천</a>
+        <a href="geumsan.html" class="region-chip">금산</a>
+        <a href="okcheon.html" class="region-chip">옥천</a>
+        <a href="gongju.html" class="region-chip">공주</a>
+        <a href="nonsan.html" class="region-chip">논산</a>
+      </div>
     </section>
 
     <footer>
